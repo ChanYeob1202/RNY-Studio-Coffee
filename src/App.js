@@ -1,6 +1,7 @@
 import './App.css';
 import { useState, useRef } from 'react';
 import Navbar from './layout/Navbar';
+import Footer from './layout/Footer';
 import About from './components/about/About';
 import Location from './sections/location/Location';
 import Contact from './sections/contact/Contact';
@@ -125,11 +126,13 @@ function App() {
 
 
       {/* Contact */}
-      <section id = "contact">
+      <section id = "contact" className = "w-full min-h-screen">
         <Contact />
-
-
       </section>
+
+      <Footer items={navItems} scrollToSection={scrollToSection}/>
+
+     
       
       
    
