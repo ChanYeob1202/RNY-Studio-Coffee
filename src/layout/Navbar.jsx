@@ -11,9 +11,13 @@ export default function Navbar({ items, scrollToSection }) {
         {/* Logo - Simpler */}
         <button 
           onClick={() => scrollToSection("home")}
-          className="text-xl font-light tracking-wide hover:opacity-70 transition"
+          className="flex flex-col hover:opacity-70 transition"
         >
-          RNY COFFEE
+          <div className="flex items-baseline gap-1">
+            <span className="font-light text-lg tracking-wide">RNY</span>
+            <span className="font-light text-lg tracking-widest">COFFEE</span>
+          </div>
+        <span className="text-xs font-serif italic -mt-1 text-gray-600">Studio</span>
         </button>
 
         {/* Desktop Menu - Minimal */}
