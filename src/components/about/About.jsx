@@ -21,9 +21,9 @@ export default function About() {
         {/* Image */}
         <div>
           <img 
-            src="/images/about.png"
+            src="/images/about2.jpg"
             alt="about_image"
-            className="w-full h-[500px] object-cover"
+            className="w-full h-[500px] rounded-2xl object-cover"
           />
         </div>
         

@@ -15,10 +15,10 @@ export default function Hero({ scrollToSection }) {
 
       {/* Hero Content - Simpler & Bigger */}
       <div className="relative z-10 text-center px-6 max-w-4xl">
-        <h1 className="text-6xl md:text-7xl lg:text-8xl font-light text-white mb-6 tracking-tight">
-          RNY Coffee
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 tracking-tight font-serif">
+          RNY Coffee Studio
         </h1>
-        <p className="text-xl md:text-2xl text-white/90 font-light mb-12">
+        <p className="text-xl md:text-2xl text-white/90 font-light mb-12 font-serif">
           Roast with passion, yield with purpose
         </p>
         
@@ -28,13 +28,13 @@ export default function Hero({ scrollToSection }) {
             href="https://order.toasttab.com/online/rny-coffee-studio-3829-west-6th-street"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-8 py-4 bg-white text-black font-medium hover:bg-white/90 transition-all"
-          >
+            className="px-8 py-4 rounded-full bg-white text-black font-medium hover:bg-white/90 transition-all"
+          > 
             Order Now
           </a>
           <button 
             onClick={() => scrollToSection("location")}
-            className="px-8 py-4 border-2 border-white text-white font-medium hover:bg-white hover:text-black transition-all"
+            className="px-8 py-4 border-2 rounded-full border-white text-white font-medium hover:bg-white hover:text-black transition-all"
           >
             Visit Us
           </button>
