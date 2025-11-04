@@ -30,7 +30,6 @@ function App() {
   const navItems = [
     { id: "home", sectionName: "Home"},
     { id: "about", sectionName: "About Us"},
-    { id: "menu", sectionName: "Menu"},
     { id: "location", sectionName: "Location"},
     { id: "contact", sectionName: "Contact"},
   ]
