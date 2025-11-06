@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+# RNY Coffee Studio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive single-page website for RNY Coffee Studio - a specialty coffee shop located in Koreatown, Los Angeles.
 
-## Available Scripts
+![RNY Coffee Studio](public/images/hero.jpg)
 
-In the project directory, you can run:
+## 🌟 Overview
 
-### `npm start`
+This is the official website for RNY Coffee Studio, featuring a minimalist design that showcases the coffee shop's offerings, location, and story. Built with React and styled with Tailwind CSS, the site provides a smooth, elegant user experience across all devices.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Live Location**: 3829 W 6th St, Los Angeles, CA 90020
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## ✨ Features
 
-### `npm test`
+- **Hero Section**: Eye-catching landing page with call-to-action buttons for online ordering and location
+- **About Section**: Story and philosophy of RNY Coffee Studio
+- **Location Section**: Interactive Google Maps integration with business hours and contact information
+- **Contact Form**: EmailJS integration for customer inquiries
+- **Smooth Scroll Navigation**: Seamless transitions between sections
+- **Responsive Design**: Mobile-first approach that works on all devices
+- **Online Ordering**: Direct integration with Toast Tab ordering system
+- **Social Media Integration**: Instagram profile link
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+- **Frontend Framework**: React 19.2.0
+- **Styling**: Tailwind CSS 3.4.18
+- **Icons**: React Icons 5.5.0
+- **Email Service**: EmailJS (@emailjs/browser 4.4.1)
+- **Routing**: React Router DOM 7.9.4
+- **Build Tool**: Create React App (react-scripts 5.0.0)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Prerequisites
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Node.js (v14 or higher)
+- npm or yarn
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Installation
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Clone the repository:
+git clone https://github.com/yourusername/rny.git
+cd rny2. Install dependencies:
+npm install
+# or
+yarn install3. Start the development server:
+npm start
+# or
+yarn start
 
-## Learn More
+### Build for Production
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm run build
+# or
+yarn buildThis creates an optimized production build in the `build/` folder.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🎨 Key Components
 
-### Code Splitting
+### Navbar
+Fixed navigation bar with responsive hamburger menu for mobile devices. Features smooth scrolling to different sections.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Hero
+Full-screen landing section with:
+- Background image overlay
+- Business tagline: "Roast with passion, yield with purpose"
+- Quick action buttons (Order Now, Visit Us)
 
-### Analyzing the Bundle Size
+### About
+Two-column layout showcasing:
+- Company story and mission
+- High-quality imagery
+- Information about coffee sourcing and roasting process
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Location
+Interactive section featuring:
+- Embedded Google Maps
+- Business hours
+- Contact information
+- Physical address
 
-### Making a Progressive Web App
+### Contact
+Clean contact form with:
+- Name, email, and message fields
+- EmailJS integration for form submissions
+- Instagram social link
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📱 Responsive Design
 
-### Advanced Configuration
+The website is fully responsive with breakpoints:
+- Mobile: < 768px
+- Tablet: ≥ 768px (md)
+- Desktop: ≥ 1024px (lg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🔧 Configuration
 
-### Deployment
+### EmailJS Setup
+To enable the contact form:
+1. Create an account at [EmailJS](https://www.emailjs.com/)
+2. Set up your email service
+3. Update the EmailJS configuration in `src/sections/contact/Contact.jsx`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### Customization
+- **Colors**: Modify `tailwind.config.js`
+- **Images**: Replace images in `public/images/`
+- **Content**: Update component files in `src/components/` and `src/sections/`
 
-### `npm run build` fails to minify
+## 🧪 Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Run the test suite:
+npm test
+# or
+yarn test## 📝 Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
+
+## 🌐 External Integrations
+
+- **Online Ordering**: [Toast Tab](https://order.toasttab.com/online/rny-coffee-studio-3829-west-6th-street)
+- **Instagram**: [@rny_coffeestudio](https://instagram.com/rny_coffeestudio)
+- **Google Maps**: Embedded location map
+
+## 📄 License
+
+This project is private and proprietary.
+
+## 👥 Contact
+
+**RNY Coffee Studio**
+- Address: 3829 W 6th St, Los Angeles, CA 90020
+- Phone: (213) 908-5141
+- Instagram: [@rny_coffeestudio](https://instagram.com/rny_coffeestudio)
+
+## 🙏 Acknowledgments
+
+- Built with Create React App
+- Styled with Tailwind CSS
+- Icons from React Icons
+- Email service by EmailJS
+
+---
+
+*Roast with passion, yield with purpose* ☕

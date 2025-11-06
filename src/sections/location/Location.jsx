@@ -48,6 +48,7 @@ export default function Location() {
       {/* Map - No Border */}
       <div className="w-full max-w-5xl">
         <iframe 
+          title="RNY Coffee Studio Location Map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.219567833916!2d-118.30631969999997!3d34.063885299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b97348612e85%3A0xd91400aefaf5b6ef!2sRNY Coffee Studio!5e0!3m2!1sen!2sus!4v1761447499199!5m2!1sen!2sus" 
           allowFullScreen
           loading="lazy" 

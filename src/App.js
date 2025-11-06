@@ -1,13 +1,12 @@
 import './App.css';
-import { useState, useRef } from 'react';
+import { useRef } from 'react';
 import Navbar from './layout/Navbar';
 import Footer from './layout/Footer';
 import About from './components/about/About';
 import Location from './sections/location/Location';
 import Contact from './sections/contact/Contact';
+import CoffeeInfo from './sections/coffee/CoffeeInfo';
 import Hero from './components/hero/Hero';
-import { FiAlignJustify } from "react-icons/fi";
-import { IoCloseSharp } from "react-icons/io5";
 
 function App() {
   const sectionRefs = useRef({});
@@ -30,6 +29,7 @@ function App() {
   const navItems = [
     { id: "home", sectionName: "Home"},
     { id: "about", sectionName: "About Us"},
+    { id: "coffee", sectionName: "Our Coffee"},
     { id: "location", sectionName: "Location"},
     { id: "contact", sectionName: "Contact"},
   ]
@@ -53,6 +53,14 @@ function App() {
           <About />
       </section>
 
+      {/* Coffee Info */}
+      <section 
+        id = "coffee" 
+        ref={(el) => sectionRefs.current['coffee'] = el}
+        className = "w-full min-h-screen"
+      >
+        <CoffeeInfo />
+      </section>
 
       {/* Location (visit us) */}
       <section 
