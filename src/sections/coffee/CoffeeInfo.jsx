@@ -83,12 +83,7 @@ export default function CoffeeInfo() {
       </div>
 
       {/* Additional Info */}
-      <div className="mt-16 text-center max-w-2xl">
-        <p className="text-gray-600">
-          Have questions? Feel free to call us at <a href="tel:2139085141" className="text-gray-900 font-medium hover:underline">(213) 908-5141</a> or 
-          DM us on Instagram <a href="https://instagram.com/rny_coffeestudio" target="_blank" rel="noopener noreferrer" className="text-gray-900 font-medium hover:underline">@rny_coffeestudio</a>
-        </p>
-      </div>
+      
     </div>
   )
 }
