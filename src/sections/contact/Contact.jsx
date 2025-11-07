@@ -35,10 +35,10 @@ export default function Contact() {
           <FaEnvelope className="text-3xl text-gray-900 mx-auto mb-4" />
           <h3 className="font-medium text-gray-900 mb-2">Email Us</h3>
           <a 
-            href="mailto:info@rnycoffee.com" 
+            href="mailto:rnycoffeestudio@gmail.com" 
             className="text-gray-600 hover:text-gray-900 transition text-sm"
           >
-            info@rnycoffee.com
+            rnycoffeestudio@gmail.com
           </a>
         </div>
 
