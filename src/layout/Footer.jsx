@@ -30,7 +30,7 @@ export default function Footer({items, scrollToSection}) {
 
           {/* Social */}
           <a 
-            href="https://instagram.com/your_handle" 
+            href="https://www.instagram.com/rnycoffeestudio/." 
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
