@@ -10,7 +10,7 @@ export default function About() {
           Our Story
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed">
-          Since 2018, we've been serving the finest coffee and creating a welcoming space 
+          Since 2022, we've been serving the finest coffee and creating a welcoming space 
           where community thrives.
         </p>
       </div>
