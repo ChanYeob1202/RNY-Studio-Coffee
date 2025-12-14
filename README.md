@@ -10,13 +10,30 @@ This is the official website for RNY Coffee Studio, featuring a minimalist desig
 
 **Live Location**: 3829 W 6th St, Los Angeles, CA 90020
 
+## 📸 Screenshots
+
+### Home Page
+![Main Page](public/images/screenshots/main.png)
+
+### About Section
+![About Section](public/images/screenshots/about.png)
+
+### Our Coffee
+![Our Coffee Section](public/images/screenshots/ourcoffee.png)
+
+### Location
+![Location Section](public/images/screenshots/location.png)
+
+### Contact
+![Contact Section](public/images/screenshots/contact.png)
+
 ## ✨ Features
 
 - **Hero Section**: Eye-catching landing page with call-to-action buttons for online ordering and location
 - **About Section**: Story and philosophy of RNY Coffee Studio
 - **Location Section**: Interactive Google Maps integration with business hours and contact information
 - **Contact Form**: EmailJS integration for customer inquiries
-- **Smooth Scroll Navigation**: Seamless transitions between sections
+- **Smooth Scroll Navigation**: Seamless transitions between sections using React refs
 - **Responsive Design**: Mobile-first approach that works on all devices
 - **Online Ordering**: Direct integration with Toast Tab ordering system
 - **Social Media Integration**: Instagram profile link
@@ -27,12 +44,40 @@ This is the official website for RNY Coffee Studio, featuring a minimalist desig
 - **Styling**: Tailwind CSS 3.4.18
 - **Icons**: React Icons 5.5.0
 - **Email Service**: EmailJS (@emailjs/browser 4.4.1)
-- **Routing**: React Router DOM 7.9.4
 - **Build Tool**: Create React App (react-scripts 5.0.0)
+- **Navigation**: Smooth scroll with React useRef hooks
 
 ## 📁 Project Structure
 
-
+```
+RNY-Studio-Coffee/
+├── public/
+│   ├── images/
+│   │   ├── screenshots/
+│   │   ├── hero.jpg
+│   │   ├── about.jpg
+│   │   └── about2.jpg
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── about/
+│   │   ├── hero/
+│   │   ├── order/
+│   │   └── ui/
+│   ├── layout/
+│   │   ├── Navbar.jsx
+│   │   └── Footer.jsx
+│   ├── sections/
+│   │   ├── about/
+│   │   ├── coffee/
+│   │   ├── contact/
+│   │   ├── location/
+│   │   └── menu/
+│   ├── App.js
+│   └── index.js
+├── package.json
+└── tailwind.config.js
+```
 
 ## 🚀 Getting Started
 
@@ -44,20 +89,36 @@ This is the official website for RNY Coffee Studio, featuring a minimalist desig
 ### Installation
 
 1. Clone the repository:
-git clone https://github.com/yourusername/rny.git
-cd rny2. Install dependencies:
+```bash
+git clone https://github.com/yourusername/rny-coffee-studio.git
+cd RNY-Studio-Coffee
+```
+
+2. Install dependencies:
+```bash
 npm install
 # or
-yarn install3. Start the development server:
+yarn install
+```
+
+3. Start the development server:
+```bash
 npm start
 # or
 yarn start
+```
+
+The app will open at [http://localhost:3000](http://localhost:3000)
 
 ### Build for Production
 
+```bash
 npm run build
 # or
-yarn buildThis creates an optimized production build in the `build/` folder.
+yarn build
+```
+
+This creates an optimized production build in the `build/` folder.
 
 ## 🎨 Key Components
 
@@ -112,9 +173,13 @@ To enable the contact form:
 ## 🧪 Testing
 
 Run the test suite:
+```bash
 npm test
 # or
-yarn test## 📝 Available Scripts
+yarn test
+```
+
+## 📝 Available Scripts
 
 - `npm start` - Runs the app in development mode
 - `npm test` - Launches the test runner
