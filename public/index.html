@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     
+    <!-- Preload critical LCP image FIRST -->
+    <link rel="preload" as="image" href="%PUBLIC_URL%/images/hero.jpg" fetchpriority="high">
+    
     <!-- Preconnect only to critical origins -->
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://www.google-analytics.com">
@@ -30,15 +33,6 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V17NL0S3KT"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-V17NL0S3KT');
-    </script>
     <title>RNY Coffee Studio - Koreatown Los Angeles</title>
   </head>
   <body>
@@ -56,5 +50,14 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    
+    <!-- Google Analytics - Load after content -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V17NL0S3KT"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-V17NL0S3KT');
+    </script>
   </body>
 </html>

@@ -21,6 +21,8 @@ export default function Hero({ scrollToSection }) {
           src="/images/hero.jpg"
           alt="RNY Coffee Studio interior"
           className="w-full h-full object-cover"
+          width="919"
+          height="1020"
           fetchpriority="high"
         />
         <div className="absolute inset-0 bg-black/40"></div>
