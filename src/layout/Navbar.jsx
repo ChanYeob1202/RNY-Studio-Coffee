@@ -37,8 +37,11 @@ export default function Navbar({ items, scrollToSection }) {
         <button 
           className="md:hidden"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label = {isOpen ? "Close Menu" : "Open Menu"}
+          aria-expanded = {isOpen}
+          aria-controls='mobile-menu'
         >
-          {isOpen ? <FiX className="text-2xl" /> : <FiMenu className="text-2xl" />}
+          {isOpen ? <FiX className="text-2xl" aria-hidden = "true" focusable="false"/> : <FiMenu className="text-2xl" aria-hidden = "true" focusable="false"/>}
         </button>
       </div>
 

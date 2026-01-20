@@ -34,8 +34,9 @@ export default function Footer({items, scrollToSection}) {
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-white transition"
+            aria-label = "go-to RNY instagram"
           >
-            <FaInstagram className="text-2xl" />
+            <FaInstagram className="text-2xl" aria-hidden="true" />
           </a>
         </div>
 

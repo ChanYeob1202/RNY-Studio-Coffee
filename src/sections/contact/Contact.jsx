@@ -20,7 +20,7 @@ export default function Contact() {
         
         {/* Phone */}
         <div className="text-center p-8 bg-white hover:shadow-lg transition duration-300">
-          <FaPhone className="text-3xl text-gray-900 mx-auto mb-4" />
+          <FaPhone className="text-3xl text-gray-900 mx-auto mb-4" aria-hidden = 'true' />
           <h3 className="font-medium text-gray-900 mb-2">Call Us</h3>
           <a 
             href="tel:2139085141" 
@@ -32,7 +32,7 @@ export default function Contact() {
 
         {/* Email */}
         <div className="text-center p-8 bg-white hover:shadow-lg transition duration-300">
-          <FaEnvelope className="text-3xl text-gray-900 mx-auto mb-4" />
+          <FaEnvelope className="text-3xl text-gray-900 mx-auto mb-4" aria-hidden = 'true' />
           <h3 className="font-medium text-gray-900 mb-2">Email Us</h3>
           <a 
             href="mailto:rnycoffeestudio@gmail.com" 
@@ -44,7 +44,7 @@ export default function Contact() {
 
         {/* Instagram */}
         <div className="text-center p-8 bg-white hover:shadow-lg transition duration-300">
-          <FaInstagram className="text-3xl text-gray-900 mx-auto mb-4" />
+          <FaInstagram className="text-3xl text-gray-900 mx-auto mb-4"  aria-hidden = 'true'/>
           <h3 className="font-medium text-gray-900 mb-2">Follow Us</h3>
           <a 
             href="https://instagram.com/rny_coffeestudio" 

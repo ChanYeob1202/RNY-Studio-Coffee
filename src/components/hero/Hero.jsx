@@ -5,10 +5,19 @@ export default function Hero({ scrollToSection }) {
   const trackOrderClick = () => {
     //GA4 gtag is created by the snippet I added in public index.html
     if(window.gtag){
+      console.log("gtag is implemented");
+      console.log("order button clicked")
+
+      // send the event
       window.gtag("event", "order_online_click", {
         event_category: "engagement",
         event_label: "hero_order_now",
-      })
+      });
+
+      // check what's in datalater
+      console.log("DataLayer: ", window.dataLayer);
+    } else {
+      console.log("gtag NOT found -GA4 not loaded")
     }
   }
 
