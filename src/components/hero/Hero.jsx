@@ -30,6 +30,9 @@ export default function Hero({ scrollToSection }) {
           src="/images/hero.jpg"
           alt="hero_image"
           className="w-full h-full object-cover"
+          width="1920"
+          height="1080"
+
         />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>
