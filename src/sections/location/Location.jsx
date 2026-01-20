@@ -54,6 +54,8 @@ export default function Location() {
           loading="lazy" 
           referrerPolicy="no-referrer-when-downgrade"
           className="w-full h-[400px] md:h-[500px] grayscale"
+          width="1200"
+          height="500"
         />
       </div>
     </div>
