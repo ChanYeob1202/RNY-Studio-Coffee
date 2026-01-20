@@ -5,19 +5,10 @@ export default function Hero({ scrollToSection }) {
   const trackOrderClick = () => {
     //GA4 gtag is created by the snippet I added in public index.html
     if(window.gtag){
-      console.log("gtag is implemented");
-      console.log("order button clicked")
-
-      // send the event
       window.gtag("event", "order_online_click", {
         event_category: "engagement",
         event_label: "hero_order_now",
       });
-
-      // check what's in datalater
-      console.log("DataLayer: ", window.dataLayer);
-    } else {
-      console.log("gtag NOT found -GA4 not loaded")
     }
   }
 
@@ -28,11 +19,9 @@ export default function Hero({ scrollToSection }) {
       <div className="absolute inset-0 z-0">
         <img
           src="/images/hero.jpg"
-          alt="hero_image"
+          alt="RNY Coffee Studio interior"
           className="w-full h-full object-cover"
-          width="1920"
-          height="1080"
-
+          fetchpriority="high"
         />
         <div className="absolute inset-0 bg-black/40"></div>
       </div>

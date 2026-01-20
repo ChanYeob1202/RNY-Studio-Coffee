@@ -22,9 +22,9 @@ export default function About() {
         <div>
           <img 
             src="/images/about2.jpg"
-            alt="about_image"
+            alt="RNY Coffee Studio atmosphere"
             className="w-full h-[500px] rounded-2xl object-cover"
-            loading='lazy'
+            loading="lazy"
           />
         </div>
         
