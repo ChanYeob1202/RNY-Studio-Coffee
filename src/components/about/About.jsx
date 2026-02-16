@@ -25,7 +25,7 @@ export default function About() {
             alt="RNY Coffee Studio atmosphere"
             className="w-full h-[500px] rounded-2xl object-cover"
             width="800"
-            height="1066"
+            height="500"
             loading="lazy"
           />
         </div>
