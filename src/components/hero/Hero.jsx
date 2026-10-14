@@ -1,17 +1,7 @@
 import React from 'react'
+import { getOrderUrl, trackOrderClick } from '../../utils/analytics';
 
 export default function Hero({ scrollToSection }) {
-
-  const trackOrderClick = () => {
-    //GA4 gtag is created by the snippet I added in public index.html
-    if(window.gtag){
-      window.gtag("event", "order_online_click", {
-        event_category: "engagement",
-        event_label: "hero_order_now",
-      });
-    }
-  }
-
 
   return (
     <section id="home" className="relative w-full h-screen flex items-center justify-center">
@@ -40,11 +30,11 @@ export default function Hero({ scrollToSection }) {
         {/* Simpler Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
-            href="https://order.toasttab.com/online/rny-coffee-studio-3829-west-6th-street"
+            href={getOrderUrl("hero")}
             target="_blank"
             rel="noopener noreferrer"
             className="px-8 py-4 rounded-full bg-white text-black font-medium hover:bg-white/90 transition-all"
-            onClick = {trackOrderClick}
+            onClick = {() => trackOrderClick("hero_order_now")}
           > 
             Order Now
           </a>

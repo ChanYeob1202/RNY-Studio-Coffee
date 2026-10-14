@@ -7,6 +7,7 @@ import Location from './sections/location/Location';
 import Contact from './sections/contact/Contact';
 import CoffeeInfo from './sections/coffee/CoffeeInfo';
 import Hero from './components/hero/Hero';
+import StickyOrderButton from './components/order/StickyOrderButton';
 
 function App() {
   const sectionRefs = useRef({});
@@ -81,6 +82,8 @@ function App() {
       </section>
 
       <Footer items={navItems} scrollToSection={scrollToSection}/>
+
+      <StickyOrderButton />
     </div>
   );
 }

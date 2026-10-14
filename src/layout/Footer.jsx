@@ -3,7 +3,7 @@ import { FaInstagram } from "react-icons/fa6";
 
 export default function Footer({items, scrollToSection}) {
   return (
-    <footer className="bg-gray-900 text-gray-400">
+    <footer className="bg-gray-900 text-gray-400 pb-20 md:pb-0">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-12">
         
         {/* Single Row Layout */}
